@@ -1,3 +1,1 @@
-Testando!!! >:D
-Será que várias linhas funcionam???
-----    LEMBRAR DE MUDAR ISSO    ----
+Testando!!! Descobri que nao sei como pula linhas, mas vou soltar uns acentos pra ver se rola problema: ãõçêíŕ
