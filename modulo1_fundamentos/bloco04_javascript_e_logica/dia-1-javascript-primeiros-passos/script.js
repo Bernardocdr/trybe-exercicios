@@ -24,31 +24,65 @@
       console.log("'a' é maior que 'b'");
     } 
 
-    else {
+    else if (a < b) {
       console.log("'b' é maior que 'a'");};
+    
+    else {
+      console.log("números iguais");};
   */
 
 
 //Exercício 3
-//Faça um programa que retorne o maior de três números. Defina no começo do programa três variáveis com os valores que serão comparados. 
 
+  /*
+    let a = 7;
+    let b = 5;
+    let c = 8;
 
+    console.log('O maior número é: ')
 
+    if (a > b && a > c) {
+      console.log(a);
+    } else if (b > a && b > c) {
+      console.log(b);
+    } else {
+      console.log(c);
+    };
+  */
 
 //Exercício 4
 //Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário. 
 
+  /*
+    let number = 1;
 
-
+    if (number > 0) {
+      console.log('positive');
+    } else if (number < 0) {
+      console.log('negative');
+    } else {
+      console.log('zero');
+    };
+  */
 
 //Exercício 5
-//Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro. 
 
-//Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
+  /*
+    let anguloA = -65;
+    let anguloB = 100;
+    let anguloC = 15;
+    let somaAngulos = anguloA + anguloB + anguloC;
 
-//Um ângulo será considerado inválido se não tiver um valor positivo.
-
-
+    if(anguloA > 0 && anguloB > 0 && anguloC > 0){
+      if (somaAngulos === 180) {
+        console.log(true);
+      } else {
+        console.log(false);
+      };
+    } else {
+      console.log('Erro: ângulo inválido');
+    }
+  */
 
 
 //Exercício 6
