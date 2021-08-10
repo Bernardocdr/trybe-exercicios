@@ -61,19 +61,84 @@
       //exercicio 1
       var h1 = document.createElement("h1");
       h1.innerText = "Exercício 5.2 - JavaScript DOM ";
+      
       document.body.appendChild(h1);
-
+      
       //exercicio 2
       var main = document.createElement("main");
       main.className = "main-content";
       document.body.appendChild(main);
 
       //exercicio 3
-      var section = document.createElement("section");
-      section.className = "center-content";
-      main.appendChild(section);
+      var section1 = document.createElement("section");
+      section1.className = "center-content";
+      main.appendChild(section1);
+
+      //exercicio 4
+      var p = document.createElement("p");
+      p.innerText = "Javascript é massa";
+      section1.appendChild(p);
+
+      //exercicio 5
+
+      var section2 = document.createElement("section");
+      section2.className = "left-content";
+      main.appendChild(section2);
+
+      //exercicio 6
+
+      var section3 = document.createElement("section");
+      section3.className = "right-content";
+      main.appendChild(section3);
+
+      //exercicio 7
+
+      var img = document.createElement("img");
+      img.className = "small-image";
+      img.src = "https://picsum.photos/200";
+      section2.appendChild(img);
+
+      //exercicio 8
+      var ul = document.createElement("ul");
+      let valores = ["um","dois","três","quatro","cinco","seis","sete","oito","nove","dez"];
+      for (let i=0;i<valores.length;i+=1){
+        var li = document.createElement("li");
+        li.innerText = valores[i];
+        ul.appendChild(li)
+      }
+      section3.appendChild(ul);
+
+      //exercicio 9
+
+      var title1 = document.createElement("h3");
+      main.appendChild(title1);
+      var title2 = document.createElement("h3");
+      main.appendChild(title2);
+      var title3 = document.createElement("h3");
+      main.appendChild(title3);
+
+
+      h1.className = "title";
+
+      title1.className = "description";
+      title2.className = "description";
+      title3.className = "description";
 
       
+      elementoRemover = main.getElementsByClassName("left-content")[0];
+      main.removeChild(elementoRemover);
+      
+      elementoCentral= main.getElementsByClassName("right-content")[0];
+      elementoCentral.style.marginRight = "auto";
+
+      elementoVerde= main.getElementsByClassName("center-content")[0];
+      elementoVerde.parentElement.style.backgroundColor = "green";
+    
+      removedItem = ul.lastElementChild;
+      ul.removeChild(removedItem);
+      removedItem = ul.lastElementChild;
+      ul.removeChild(removedItem);
+      console.log(ul)
     </script>
   </body>
 </html>
