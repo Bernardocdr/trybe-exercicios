@@ -40,6 +40,7 @@ function exercicio04(texto){
 exercicio04("Exercício 5.1 - JavaScript");
 
 // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+
 function exercicio05(){  
   document.querySelector("p").innerHTML = document.querySelector("p").innerHTML.toUpperCase();
   console.log("Exercício 05: Maiúsculo: "+ document.querySelector("p").innerText);
